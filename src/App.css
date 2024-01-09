@@ -1,0 +1,165 @@
+:root {
+  font-family: "plus jakarta sans", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  color: #0e0e0e;
+  background-color: #fafafa;
+  background-image: url(./assets/Images/bgpattern.svg);
+  background-size: 120px;
+  max-width: 2400px;
+}
+
+.keyword::before {
+  content: '';
+  background-image: url("./assets/Images/strokee-01.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  /* background: #000; */
+  background-size: contain;
+  bottom: -18px;
+  left: 0;
+  width: 100%;
+  height: 34px;
+  transform: scale(1.1);
+  z-index: -1;
+}
+
+.link {
+  position: relative;
+  transition: .23s ease-out;
+}
+
+.link:hover {
+  padding-bottom: 5px;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #AE3034;
+  left: 0;
+  bottom: -5px;
+  margin-left: -10px;
+  opacity: 0;
+  width: 0;
+  transition: cubic-bezier(0.215, 0.610, 0.355, 1) .23s;
+}
+
+.link:hover::before {
+  width: 100%;
+  margin-left: 0;
+  opacity: 1;
+}
+
+a:hover {
+  color: #AE3034;
+}
+
+.link:hover img {
+  transform: scaleY(-1);
+}
+
+.link:hover img {
+  transition: all ease-out .4s;
+}
+
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    color: #f5f5f5;
+    background-color: #040101;
+  }
+
+  a:hover {
+    color: #AE3034;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+
+.btnPad:not(:active):hover img {
+  transform: translateY(-8px);
+}
+
+.btnPad:active img {
+  transition: 100;
+  transform: translateY(-4);
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #99999960;
+  border-radius: 2px;
+}
+
+::selection {
+  background: #f5763b40;
+}
+
+img,
+button {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* 
+:root {
+  color: #0e0e0e;
+  background-color: #fff;
+}
+
+a:hover {
+  color: #AE3034;
+}
+
+button {
+  background-color: #f9f9f9;
+} */
+
+
+button:has(.arrsPad):hover .arrs {
+  margin-top: -14px;
+  margin-left: 14px;
+}
+
+button:has(.arrsPad):hover {
+  box-shadow: #AE3034 6px 6px 0;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(10px);
+  }
+
+}
+
+.girl-mockup {
+  animation: move 3s alternate infinite;
+  z-index: -3;
+}
+
+.link:hover .dropdown {
+  max-height: 300px;
+  opacity: 1;
+  background: #f5f5f7;
+}
+
+.allProducts::-webkit-scrollbar{
+  display: none;
+  background: none;
+}
