@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom"
-import tick from "../assets/Images/tick-01.svg"
+import verify from "../assets/Images/verify.svg"
 import star from "../assets/Images/star.svg"
 import sgray from "../assets/Images/gstar.svg"
 
@@ -9,10 +9,10 @@ const ProductCard = (props) => {
         <>
 
             <div className="card shrink-0 rounded-2xl overflow-hidden bg-white w-[200px] md:w-full border font-medium">
-                <div style={{backgroundImage: `url(${props.img})`}} className="img relative bg-[#f1f1f1] w-full aspect-[1/.7] flex bg-no-repeat bg-cover bg-center  justify-end items-start p-2">
+                <div style={{backgroundImage: `url(${props.img})`}} className="img relative bg-[#f1f1f1] w-full aspect-[1/.7] flex bg-no-repeat bg-cover min-h-[120px] bg-center  justify-end items-start p-2">
 
-                   <p className="gold flex gap-2 items-center text-[.6rem] text-white backdrop-blur-md bg-[#64646490] border border-[#cccccc30] rounded-full whitespace-nowrap w-max p-1.5 pr-3.5">
-                        <img src={tick} alt="" className="w-5 bg-orange-400  rounded-full h-5 p-1" />
+                   <p className="gold flex gap-1 items-center text-[.6rem] text-white backdrop-blur-md bg-[#64646490] border border-[#cccccc30] rounded-full whitespace-nowrap w-max p-1.5 pr-3">
+                        <img src={verify} alt="" className="w-6 h-6 object-contain  " />
                     Hucksters Gold Vendor</p>    
                 </div>
              

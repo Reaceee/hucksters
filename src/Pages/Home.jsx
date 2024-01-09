@@ -361,7 +361,7 @@ const Home = () => {
                 </p>
 
 
-                <div className="allProducts w-full overflow-x-scroll md:grid grid-cols-4 pt-10 px-8 lg:px-[6rem] md:pt-20 md:px-8 pb-5 flex gap-4">
+                <div className="allProducts w-full overflow-x-scroll md:grid grid-cols-4 pt-10 px-8 lg:px-[6rem] md:pt-20 md:px-8 pb-5 flex gap-4 gap-y-8">
                     {allProducts.map(product => (
                         <ProductCard name={product.name} prices={product.prices} stars={product.stars} img={product.img} />
                     ))}
@@ -477,7 +477,7 @@ as a <span className="text-redd ">Vendor</span> </p>
 
 
             
-            <div className="px-20">
+            <div className="px-5 md:px-10 lgpx-20">
             <p className="text-2xl md:text-[2.4rem] max-w-[750px] relative pt-20 font-bold leading-snug">Customer <span className="text-redd ">Satisfaction</span> </p>
                     <p className=" max-w-[450px] mt-3 leading-relaxed w-full text-sm text-[#999] font-medium mb-10">
                     Embark on a transformative journey as a vendor with Huckster and unlock unparalleled sales potential for your business. Our platform offers a seamless onboarding experience, guiding you effortlessly 

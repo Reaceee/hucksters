@@ -28,7 +28,7 @@ const Header = () => {
                                     <p className="w-full p-5 hover:bg-[#f3f3f358] pr-20">Services</p>
                                 </Link>
                                 <Link className=" w-full " to="/contact">
-                                    <p className="w-full p-5 hover:bg-[#f3f3f358] pr-20">Popular vendors</p>
+                                    <p className="w-full p-5 hover:bg-[#f3f3f358] pr-20">Hucksters vendors</p>
                                 </Link>
                             </div>
                         </div>
