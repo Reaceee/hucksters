@@ -9,7 +9,7 @@ const ProductCard = (props) => {
         <>
 
             <div className="card shrink-0 rounded-2xl overflow-hidden bg-white w-[200px] md:w-full border font-medium">
-                <div style={{backgroundImage: `url(${props.img})`}} className="img relative bg-[#f1f1f1] w-full aspect-[1/.7] flex bg-no-repeat bg-cover min-h-[120px] bg-center  justify-end items-start p-2">
+                <div style={{backgroundImage: `url(${props.img})`}} className="img relative bg-[#f1f1f1] w-full aspect-[1/.7] flex bg-no-repeat bg-cover min-h-[150px] bg-center  justify-end items-start p-2">
 
                    <p className="gold flex gap-1 items-center text-[.6rem] text-white backdrop-blur-md bg-[#64646490] border border-[#cccccc30] rounded-full whitespace-nowrap w-max p-1.5 pr-3">
                         <img src={verify} alt="" className="w-6 h-6 object-contain  " />
